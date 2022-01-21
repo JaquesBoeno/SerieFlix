@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="128mm"
+   height="128mm"
+   viewBox="0 0 128 128"
+   version="1.1"
+   id="svg2012"
+   inkscape:version="1.1.1 (eb90963e84, 2021-10-02)"
+   sodipodi:docname="minimize button.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview2014"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     width="128mm"
+     inkscape:zoom="0.73762626"
+     inkscape:cx="387.05238"
+     inkscape:cy="263.00582"
+     inkscape:window-width="1920"
+     inkscape:window-height="1018"
+     inkscape:window-x="0"
+     inkscape:window-y="30"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2009" />
+  <g
+     inkscape:label="Camada 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       id="path12268-3"
+       style="fill:#ffffff;fill-opacity:1;stroke-width:19.4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:22;paint-order:fill markers stroke"
+       d="M 99.01877,0 H 81.49115 v 46.657617 h 46.50879 V 29.08918 H 99.01877 Z" />
+    <path
+       id="path29275-6"
+       style="fill:#ffffff;fill-opacity:1;stroke-width:19.4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:22;paint-order:fill markers stroke"
+       d="M 127.99994,99.206347 V 81.638427 H 81.49115 V 128.29604 H 99.01877 V 99.206347 Z" />
+    <path
+       id="path29271-7"
+       style="fill:#ffffff;fill-opacity:1;stroke-width:19.4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:22;paint-order:fill markers stroke"
+       d="M 28.98118,128.29604 H 46.50879 V 81.638427 H 0 v 17.56792 h 28.98118 z" />
+    <path
+       id="path29267-5"
+       style="fill:#ffffff;fill-opacity:1;stroke-width:19.4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:22;paint-order:fill markers stroke"
+       d="M 0,46.657617 H 46.50879 V 0 H 28.98118 V 29.08918 H 0 Z" />
+  </g>
+</svg>

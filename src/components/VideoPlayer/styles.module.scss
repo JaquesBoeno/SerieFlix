@@ -1,0 +1,142 @@
+.VideoPlayer {
+  width: 100vw;
+  height: calc(100vw / 16 * 9);
+  transform: translateY(calc((100vw * 9 / 16 - 100vh) / -2));
+  position: relative;
+  background-color: #000000;
+
+  * {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+  }
+
+  video {
+    width: 100%;
+    height: 100%;
+  }
+
+  .controls {
+    position: absolute;
+    z-index: 999;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: .5rem .8rem;
+
+    .controlsWrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+
+      div {
+        display: flex;
+        align-items: center;
+      }
+
+      button {
+        background-color: transparent;
+        font-size: 0;
+        padding: .6rem;
+        border-radius: 8rem;
+        border: 0;
+        transition: .2s background;
+        outline: 0;
+
+        &:hover {
+          background-color: rgba(#D4D4D4, .1);
+        }
+      }
+
+      .leftBox {
+        p.time {
+          font-size: 1rem;
+          color: #ffffff;
+        }
+      }
+
+      .centerBox {
+        justify-content: center;
+
+        .timeControl {
+          padding: .4rem;
+        }
+
+        .play {
+          margin: 0 .5rem;
+        }
+      }
+
+      .rightBox {
+        justify-content: flex-end;
+
+        .volume {
+          font-size: 0;
+          border-radius: 8rem;
+          border: 0;
+          transition: .2s background;
+
+          .rangeVolume {
+            width: 0px;
+            opacity: 0;
+            transition: .4s width;
+          }
+
+          button.mute {
+
+            background-color: transparent;
+            margin: 0;
+          }
+
+          &:hover {
+            background-color: rgba(#D4D4D4, .1);
+          }
+        }
+
+        button.maximize {
+          margin-left: .5rem;
+        }
+      }
+    }
+
+    .rangeTimeContainer {
+      position: relative;
+      width: 100%;
+      height: .25em;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      padding: .5rem 0;
+
+      div {
+        position: absolute;
+      }
+
+      .time {
+        width: 100%;
+        height: .25em;
+        background-color: #cccccc44;
+      }
+
+      .timeWatched {
+        height: .25em;
+        width: 0;
+        background-color: #ffffff;
+      }
+
+      .timeWatched::after {
+        content: "";
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background-color: #ffffff;
+        position: absolute;
+        right: -6px;
+        top: 50%;
+        transform: translateY(-50%);
+        transition: 1s;
+      }
+    }
+  }
+}
