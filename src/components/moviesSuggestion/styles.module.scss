@@ -1,0 +1,72 @@
+.moviesSuggestionContainer {
+  margin-top: 1rem;
+
+  h2 {
+    margin-bottom: .5rem;
+  }
+
+  >div {
+    position: relative;
+    display: flex;
+
+    button {
+      position: absolute;
+      border: 0;
+      font-size: 0;
+      height: 100%;
+      width: 2rem;
+      background-color: #000000AC;
+      opacity: 0;
+      transition: .2s opacity;
+
+      &:first-child {
+        left: 0rem;
+      }
+
+      &:last-child {
+        right: 0rem;
+      }
+
+      &:hover {
+        opacity: 100;
+      }
+    }
+
+    >div {
+      display: flex;
+      overflow-x: hidden;
+
+      .moviesContainer {
+        display: flex;
+
+        .movieWrapper {
+          width: calc(100vw / 6);
+          height: calc((100vw / 6) * 9 / 16);
+          padding-right: .5rem;
+
+          .movieBanner {
+            width: 100%;
+            height: 100%;
+
+          }
+
+          &:nth-child(3n-2) .movieBanner {
+            background-color: #EF5350;
+          }
+
+          &:nth-child(3n-1) .movieBanner {
+            background-color: #2E7D32;
+          }
+
+          &:nth-child(3n) .movieBanner {
+            background-color: #03A9F4;
+          }
+
+          &:last-child {
+            padding-right: 0;
+          }
+        }
+      }
+    }
+  }
+}

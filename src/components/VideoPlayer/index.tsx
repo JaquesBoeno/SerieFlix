@@ -13,7 +13,11 @@ import muteOffIcon from './assets/icons/volume/2.svg';
 import maximizeIcon from './assets/icons/maximize/on.svg';
 import minimizeIcon from './assets/icons/maximize/off.svg';
 
-const Player: React.FC = () => {
+type props = {
+  source: string;
+};
+
+const Player: React.FC<props> = ({ source }) => {
   const VideoRef = useRef<HTMLVideoElement>(null);
   const TimeBarRef = useRef<HTMLDivElement>(null);
   const TimeWatchedRef = useRef<HTMLDivElement>(null);
@@ -174,7 +178,7 @@ const Player: React.FC = () => {
   return (
     <div ref={ContainerRef} className={styles.VideoPlayer}>
       <video ref={VideoRef} autoPlay poster="http://192.168.100.94:3080/video">
-        <source src="http://192.168.100.94:3080/video" type="video/mp4" />
+        <source src={source} type="video/mp4" />
       </video>
 
       <div className={styles.controls}>

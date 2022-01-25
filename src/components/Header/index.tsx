@@ -1,5 +1,5 @@
-import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import styles from './styles.module.scss';
 
 const Header: React.FC = () => {
@@ -8,7 +8,16 @@ const Header: React.FC = () => {
       <div className={styles.wrapper}>
         <div>
           <Link href="/">
-            <a>Logo Da Empresa</a>
+            <a>
+              <div>
+                <Image
+                  className={styles.logo}
+                  src="/assets/Logo.svg"
+                  layout="fill"
+                  alt=""
+                />
+              </div>
+            </a>
           </Link>
         </div>
         <ul>
